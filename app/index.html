@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Michael Lee Hobbs</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- todo remove -->
+    <!--<link rel="stylesheet" type="text/css" href="ignore/bootstrap.min.css">-->
+    <!-- todo remove end-->
+
+    <link rel="stylesheet" href="app.css">
+
+
+    <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+
+
+</head>
+<body>
+
+<div class="container-fluid">
+    <div id="header" class="gradient_01">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+
+                <br>
+
+                <h1><span class="color_01 bold">Michael</span><span class="color_02 bold"> Hobbs</span>
+                    <small class="color_02">web application developer for hire</small>
+                </h1>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div id="menu" class="col-sm-8 col-sm-offset-2">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <ul class="menu nav navbar-nav">
+                            <li class="active menu-item"><a href="#/profile">Profile</a></li>
+                            <li class="menu-item"><a href="#/resume">Resume</a></li>
+                            <li class="menu-item"><a href="#/portfolio">Portfolio</a></li>
+                            <li class="menu-item"><a href="#/connect">Connect with Me</a></li>
+                            <li class="menu-item"><a href="#/webdevres">Web Dev Resources</a></li>
+                            <li class="menu-item"><a href="#/blog">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<div ng-view></div>
+
+<!--<div>Angular seed app: v<span app-version></span></div>-->
+
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="app.js"></script>
+<script src="profile/profile.js"></script>
+<script src="resume/resume.js"></script>
+<script src="portfolio/portfolio.js"></script>
+<script src="connect/connect.js"></script>
+<script src="webdevres/webdevres.js"></script>
+<script src="blog/blog.js"></script>
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+
+<!--Google-->
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<!--Menu-->
+<script>
+    $(document).ready(function(){
+        $(".menu-item").click(function(){
+            $(".menu-item").removeClass("active");
+            $(this).addClass("active");
+        });
+    });
+</script>
+
+</body>
+</html>
